@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="100dp"
+            android:text="Select Options"
+            android:textAlignment="center"
+            android:paddingTop="20dp"/>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_horizontal">
+
+
+            <RadioGroup
+                android:id="@+id/grp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/r1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="kerala"/>
+                <RadioButton
+                    android:id="@+id/r2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tamil Nadu"/>
+                <RadioButton
+                    android:id="@+id/r3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="karnataka"/>
+
+            </RadioGroup>
+
+        </TableRow>
+<!--        <TableRow-->
+<!--            android:gravity="center">-->
+<!--            <Button-->
+<!--                android:id="@+id/submit"-->
+<!--                android:onClick="showCapital"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Show Capital"/>-->
+<!--        </TableRow>-->
+        <TableRow
+            android:gravity="center">
+            <TextView
+                android:id="@+id/result"
+                android:hint="Capital"
+                android:layout_marginTop="10dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
